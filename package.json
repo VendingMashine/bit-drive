@@ -1,0 +1,18 @@
+{
+  "name": "bit-drive",
+  "version": "0.0.1",
+  "description": "A file sharing alternative, that uses bittorrent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "launch": "node command.js"
+  },
+  "author": "Cheikh Seck",
+  "license": "ISC",
+  "dependencies": {
+    "catapult_edm": "^1.0.6",
+    "node-fetch": "^2.6.1",
+    "terminal-kit": "^2.1.4",
+    "webtorrent": "^1.0.0"
+  }
+}
