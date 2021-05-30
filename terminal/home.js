@@ -12,7 +12,8 @@ class HomeView {
         var options = {
             y: 1, // the menu will be on the top of the terminal
             style: term.inverse,
-            selectedStyle: term.dim.blue.bgGreen
+            selectedStyle: term.dim.blue.bgGreen,
+            leftPadding : '    '
         };
 
         term.clear();
