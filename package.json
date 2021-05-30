@@ -14,9 +14,15 @@
     "terminal-kit": "^2.1.4",
     "webtorrent": "^1.0.0"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "keywords" : ["torrent","p2p", "file", "sharing", "udp", "tcp"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VendingMashine/bit-drive.git"
+  },
+  "bin": {
+    "bit-drive": "./command.js"
   }
 }
