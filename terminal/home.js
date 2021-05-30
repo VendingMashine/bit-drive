@@ -79,12 +79,17 @@ class HomeController {
                 //magnetURI
                 try {
                     var client = new torrent()
-                    client.add(filePath)
+                    client.add(filePath.trim())
                         .then(torrent => {
 
                             //console.log(torrent)
                             term.clear()
                             term.moveTo(1, 6, `Torrent saved. Magnet URI : ${torrent.magnetURI}`)
+                            storage.torrents.push({
+                                filepath : filePath.trim(),
+                                uri: torrent.magnetURI
+                            })
+                            storage.savePrefs()
                             kutil.ActionList(
                                 term,
                                 null,
@@ -197,8 +202,8 @@ class HomeController {
                 }
 
                 btns = btns.filter(el => {
-                	if(!el.text)
-                		return false
+                    if (!el.text)
+                        return false
 
                     return el.text.includes(filter)
                 })
@@ -314,14 +319,13 @@ class settings {
                     return
                 }
                 term("Path saved!" + input)
-                
-                
-                if (!input.includes("://")){
-                	var filePath = path.resolve(input)
+
+
+                if (!input.includes("://")) {
+                    var filePath = path.resolve(input)
                     storage.torrent_repos.push(filePath)
-                }
-                else {
-                	storage.torrent_repos.push(input)
+                } else {
+                    storage.torrent_repos.push(input)
                 }
 
                 storage.savePrefs()

@@ -1,4 +1,7 @@
 [{
 	"name" : "sms",
 	"uri" : "magnet:?xt=urn:btih:28790f9dd6dfa5982e6f350bed99431900bc690f&dn=sms&tr=udptracker.leechers-paradise.org6969&tr=udptracker.coppersurfer.tk6969&tr=udptracker.opentrackr.org1337&tr=udpexplodie.org6969&tr=udptracker.empire-js.us1337&tr=wsstracker.btorrent.xyz&tr=wsstracker.openwebtorrent.com"
+},{
+	"name" : "SignRequest",
+	"uri" : "magnet:?xt=urn:btih:4b77f5dbffee4af8a0ea5c12e44bc4e6daf846b6&dn=CertificateSigningRequest.certSigningRequest&tr=udptracker.leechers-paradise.org6969&tr=udptracker.coppersurfer.tk6969&tr=udptracker.opentrackr.org1337&tr=udpexplodie.org6969&tr=udptracker.empire-js.us1337&tr=wsstracker.btorrent.xyz&tr=wsstracker.openwebtorrent.com"
 }]

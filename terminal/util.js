@@ -38,8 +38,8 @@ class KitUtil {
                     callback(undefined, termkit.autoComplete(files, inputString, true));
                 });
             };
-
-            term.moveTo(1, 3, prompt)
+            term.clear()
+            term.term(prompt)
 
             term.fileInput({ autoComplete: autoCompleter, autoCompleteMenu: true, y : 4 },
                 function(error, input) {
