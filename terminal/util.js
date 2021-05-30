@@ -38,10 +38,11 @@ class KitUtil {
                     callback(undefined, termkit.autoComplete(files, inputString, true));
                 });
             };
-            term.clear()
-            term.term(prompt)
 
-            term.fileInput({ autoComplete: autoCompleter, autoCompleteMenu: true, y : 4 },
+            term.clear()
+            term(prompt)
+
+            term.fileInput({ autoComplete: autoCompleter, autoCompleteMenu: true },
                 function(error, input) {
                     if (error) {
                        reject(error)

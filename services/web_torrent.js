@@ -22,6 +22,7 @@ class TorrentClient {
 
         term.clear()
         return new Promise((resolve, reject) => {
+
             term.cyan("Seeding torrent... " + files)
            
             client.seed([files], function(torrent) {

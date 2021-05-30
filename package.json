@@ -1,6 +1,6 @@
 {
   "name": "@thestrukture/bit-drive",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A file sharing alternative, that uses web-torrent",
   "main": "index.js",
   "scripts": {
